@@ -1,0 +1,10 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "article-word-cloud-api"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-14l4olmgztvwp"
+s3_prefix = "article-word-cloud-api"
+region = "us-east-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
