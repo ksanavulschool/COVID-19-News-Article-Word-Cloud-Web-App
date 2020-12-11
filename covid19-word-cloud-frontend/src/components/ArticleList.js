@@ -1,8 +1,18 @@
 import React from 'react';
 import ArticleListItem from './ArticleListItem';
+var axios = require('axios');
 
 function ArticleList(props) {
     // Make axios call to the backend
+
+    axios.get('https://tmemt2t140.execute-api.us-east-1.amazonaws.com/Prod/articles/')
+        .then((response) => {
+            console.log(response);
+        })
+        .catch((err) => {
+            console.log(err);
+        });
+
     var sampleProps1 = {
         imageLocation: './word-clouds/sample_word_cloud.png',
         imageAlt: 'A word cloud',
